@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="Rule.xsl" ?> 
+<chessplayers> 
+<s> 
+<number> 1 </number>
+<name> Garry Kasparov </name> 
+<peekranking> 2851 (Jully 1999) </peekranking>
+<age> 57 </age>
+<dob> April 13, 1963</dob> 
+<country> Soviet Union </country> 
+</s> 
+<s> 
+<number> 2 </number>
+<name> Anatoly Karpov </name> 
+<peekranking> 2780 (July 1994) </peekranking>
+<age> 69 </age>
+<dob> May 23, 1951 </dob> 
+<country> Soviet Union </country> 
+</s> 
+<s> 
+<number> 3 </number>
+<name> Magnus Carlsen </name> 
+<peekranking> 2882 (May 2014) </peekranking>
+<age> 30 </age>
+<dob> November 30, 1990 </dob> 
+<country> Norway </country> 
+</s> 
+<s> 
+<number> 4 </number>
+<name> Wilhelm Steinitz </name> 
+<peekranking> N/A </peekranking>
+<age> 64 </age>
+<dob> May 14, 1836 </dob> 
+<country> Prague, Kingdom of Bohemia </country> 
+</s> 
+<s> 
+<number> 5 </number>
+<name> José Raúl Capablanca </name> 
+<peekranking> N/A </peekranking>
+<age> 53 </age>
+<dob> November 19, 1888 </dob> 
+<country> Cuba </country> 
+</s> 
+<s> 
+<number> 6 </number>
+<name> Bobby Fischer </name> 
+<peekranking> 2785 (July 1972 FIDE rating list) </peekranking>
+<age> 64 </age>
+<dob> March 9, 1943 </dob> 
+<country> United States </country> 
+</s> 
+<s> 
+<number> 7 </number>
+<name> Alexander Alekhine </name> 
+<peekranking> N/A </peekranking>
+<age> 53 </age>
+<dob> October 31, 1892 </dob> 
+<country> Russian Empire </country> 
+</s> 
+<s> 
+<number> 8 </number>
+<name> Mikhail Botvinnik </name> 
+<peekranking> 2630 (July 1971) </peekranking>
+<age> 83 </age>
+<dob> August 17, 1911 </dob> 
+<country> Soviet Union </country> 
+</s> 
+<s> 
+<number> 9 </number>
+<name> Paul Morphy </name> 
+<peekranking> N/A </peekranking>
+<age> 47 </age>
+<dob> June 22, 1837 </dob> 
+<country> United States </country> 
+</s> 
+<s> 
+<number> 10 </number>
+<name> Vishwanathan Anand </name> 
+<peekranking> 2817 (March 2011) </peekranking>
+<age> 50 </age>
+<dob> December 11, 1969 </dob> 
+<country> India </country> 
+</s> 
+</chessplayers> 

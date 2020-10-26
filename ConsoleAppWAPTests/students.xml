@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+   Web Application Development
+   BSHCIFSC2
+   Tutorial 2
+   
+   Student Name: 
+   Date:  
+
+   Filename:          students.xsd
+   Supporting Files:  students.xml
+-->
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="students.xsd">
+   <student stuID="SI890-041-02">
+      <lastName>Berstein</lastName>
+      <firstName>Cynthia</firstName>
+      <dateOfEnrollment>2017-05-22</dateOfEnrollment>
+      <credits>12</credits>
+      <gpa degree="MP">3.81</gpa>
+   </student>
+
+   <student stuID="SI771-121-10">
+      <lastName>Boothe</lastName>
+      <firstName>Jennifer</firstName>
+      <dateOfEnrollment>2017-11-24</dateOfEnrollment>
+      <credits>38</credits>
+      <comment>Applied for summer studies internship</comment>
+      <gpa degree="WPA">3.14</gpa>
+   </student>
+
+   <student stuID="SI815-741-03">
+      <lastName>Bowen</lastName>
+      <firstName>Kristi</firstName>
+      <dateOfEnrollment>2017-04-25</dateOfEnrollment>
+      <credits>19</credits>
+      <gpa degree="MP">3.88</gpa>
+   </student>
+
+   <student stuID="SI701-891-05">
+      <lastName>Sanchez</lastName>
+      <firstName>Rosario</firstName>
+      <dateOfEnrollment>2017-08-14</dateOfEnrollment>
+      <credits>14</credits>
+      <comment>Applied for student tutor</comment>
+      <comment>Applied for Women in IT Scholarship</comment>
+      <gpa degree="WPA">3.89</gpa>
+   </student>
+
+   <student stuID="SI805-891-08">
+      <lastName>Russeon</lastName>
+      <firstName>Alison</firstName>
+      <dateOfEnrollment>2017-09-14</dateOfEnrollment>
+      <credits>15</credits>
+      <gpa degree="WPA">2.76</gpa>
+   </student>
+</students>

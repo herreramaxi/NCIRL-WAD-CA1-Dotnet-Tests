@@ -1,0 +1,231 @@
+<?xml version="1.0" standalone="no"?>
+
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="products.xsd">
+<vendor webvendor="full" id="conners">
+   <vendor_name>Conners Chair Company</vendor_name>
+   <advertisement>
+       <ad_sentence>
+       Conners Chair Company presents their annual big three
+       day only chair sale. We're making way for our new
+       stock!  <b>All current inventory must go!</b>  Regular prices
+       slashed by up to 60%!
+        </ad_sentence>
+    </advertisement>
+
+    <product>
+        <product_id>QA3452</product_id>
+        <short_desc>Queen Anne Chair</short_desc>
+        <price pricetype="cost">$85</price>
+        <price pricetype="sale">$125</price>
+        <price pricetype="retail">$195</price>
+        <inventory color="royal blue" location="warehouse">
+            12</inventory>
+        <inventory color="royal blue" location="showroom">
+            5</inventory>
+        <inventory color="flower print" location="warehouse">
+            16</inventory>
+        <inventory color="flower print" location="showroom">
+            3</inventory>
+        <inventory color="seafoam green" location="warehouse">
+            20</inventory>
+        <inventory color="teal" location="warehouse">
+            14</inventory>
+        <inventory color="burgundy" location="warehouse">
+            34</inventory>
+        <giveaway>
+            <giveaway_item>
+            Matching Ottoman included
+            </giveaway_item>
+            <giveaway_desc>
+            while supplies last
+            </giveaway_desc>
+        </giveaway>
+    </product>
+
+    <product>
+        <product_id>RC2342</product_id>
+        <short_desc>Early American Rocking Chair</short_desc>
+        <product_desc>
+            with brown and tan plaid upholstery
+        </product_desc>
+        <price pricetype="cost">$75</price>
+        <price pricetype="sale">$62</price>
+        <price pricetype="retail">$120</price>
+        <inventory location="warehouse">40</inventory>
+        <inventory location="showroom">2</inventory>
+    </product>
+
+    <product>
+        <product_id>BR3452</product_id>
+        <short_desc>Bentwood Rocker</short_desc>
+        <price pricetype="cost">$125</price>
+        <price pricetype="sale">$160</price>
+        <price pricetype="retail">$210</price>
+        <inventory location="showroom">3</inventory>
+    </product>
+
+</vendor>
+
+ <vendor webvendor="partial" id="wally">
+     <vendor_name>Wally's Wonderful World of Furniture</vendor_name>
+     <advertisement>
+         <ad_sentence>
+         Wally's Wonderful World of Furniture is closing its
+         doors forever. Last chance to get great bargains.
+         Make us an offer. We can't refuse!
+         </ad_sentence>
+     </advertisement>
+
+     <suite>
+         <product_id>CDRS</product_id>
+         <short_desc>Complete Dining Room Set</short_desc>
+         <long_desc>
+             This five piece dining site set features swivel
+             chairs with cushions in five exciting colors.
+         </long_desc>
+         <price pricetype="cost">$435</price>
+         <price pricetype="sale">$699</price>
+         <price pricetype="retail">$999</price>
+
+         <product>
+             <product_id>WWWdrt</product_id>
+             <short_desc>Dining Room Table</short_desc>
+             <price pricetype="cost">$105</price>
+             <price pricetype="sale">$145</price>
+             <price pricetype="retail">$195</price>
+             <inventory location="warehouse">132</inventory>
+         </product>
+         <product>
+           <product_id>WWWsc</product_id>
+            <short_desc>Swivel Chair</short_desc>
+            <price pricetype="cost">$50</price>
+            <price pricetype="sale">$45</price>
+            <price pricetype="retail">$99</price>
+            <inventory location="warehouse">300</inventory>
+       </product>
+        <product>
+            <product_id>WWWhch</product_id>
+           <short_desc>Hutch</short_desc>
+            <price pricetype="cost">$346</price>
+           <price pricetype="sale">$425</price>
+            <price pricetype="retail">$600</price>
+            <inventory location="warehouse">232</inventory>
+        </product>
+    </suite>
+
+    <product>
+        <short_desc>Hall Bench</short_desc>
+        <price pricetype="cost">$75</price>
+        <price pricetype="sale">$62</price>
+        <price pricetype="retail">$120</price>
+        <inventory location="warehouse">143</inventory>
+       <inventory location="showroom">5</inventory>
+    </product>
+
+    <product>
+        <product_id>SofaLoveSeat</product_id>
+        <short_desc>Sofa and Love Seat</short_desc>
+        <price color="magnolia print" pricetype="cost">
+             $125</price>
+        <price color="nautical print" pricetype="cost">
+             $145</price>
+        <price pricetype="sale">$175</price>
+        <price pricetype="retail">$250</price>
+        <inventory color="magnolia print" location="showroom">
+            3</inventory>
+        <inventory color="magnolia print" location="warehouse">
+             36</inventory>
+        <inventory color="nautical print" location="warehouse">
+             1</inventory>
+        <inventory color="nautical print" location="showroom">
+             432</inventory>
+   </product>
+
+</vendor>
+
+<vendor webvendor="no" id="marge">
+    <vendor_name>Crazy Marge's Bed Emporium</vendor_name>
+    <advertisement>
+        <ad_sentence>
+        We never have a sale because we've got the lowest
+        prices in town!  Come in today and shop around. If
+        you can find lower prices anywhere Crazy Marge will
+        shave her husband's head!!!
+        </ad_sentence>
+        <ad_sentence>
+        We have all kinds, all sizes. Don't see what you
+        want?  Don't worry. We customize orders!
+        </ad_sentence>
+    </advertisement>
+
+    <product>
+        <product_id>3253435</product_id>
+        <short_desc>Sleepeazy Mattresses</short_desc>
+        <product_desc>per set, any size</product_desc>
+        <price pricetype="cost">$162</price>
+        <price pricetype="retail">$300</price>
+        <inventory location="showroom">23</inventory>
+        <inventory location="warehouse">15</inventory>
+        <giveaway>
+            <giveaway_item>
+            Free pillows
+            </giveaway_item>
+            <giveaway_desc>
+            with every set
+            </giveaway_desc>
+        </giveaway>
+    </product>
+
+    <product>
+        <product_id>5622345</product_id>
+        <short_desc>CozyComfort Mattresses</short_desc>
+        <price pricetype="starting">starting at only $99.99</price>
+        <item>
+            <product_desc>Queen</product_desc>
+            <price pricetype="cost">$59.00</price>
+            <price pricetype="sale">$69.00</price>
+            <price pricetype="retail">$99.00</price>
+        </item>
+        <item>
+            <product_desc>King</product_desc>
+            <price pricetype="cost">$159.00</price>
+            <price pricetype="sale">$209.00</price>
+            <price pricetype="retail">$359.00</price>
+        </item>
+        <giveaway>
+            <giveaway_item>
+            Free sheets
+            </giveaway_item>
+            <giveaway_desc>
+            with every set
+            </giveaway_desc>
+        </giveaway>
+    </product>
+
+    <product>
+        <product_id>39981234</product_id>
+        <short_desc>Floataway Waterbeds</short_desc>
+	<price pricetype="cost">TBD</price>
+        <giveaway>
+            <giveaway_item>
+            15 different styles to choose from
+            </giveaway_item>
+            <giveaway_desc>
+            with free delivery -- we'll take your
+            old mattress as a trade in!
+            </giveaway_desc>
+        </giveaway>
+    </product>
+
+</vendor>
+
+<special specialtype="weekly" vendor_id="marge">
+    This week only:  Round beds with rotating motors
+    starting at a price that will make your head spin.
+    Just talk to Crazy Marge, she'll tell you all about it!
+</special>
+
+</products>
+
+

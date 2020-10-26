@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Web Application Development
+   BSHCIFSC2
+   Tutorial 2
+   
+   Student Name: 
+   Date:  
+
+   Filename:          students.xsd
+   Supporting Files:  students.xml
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <xsd:attribute name="stuID" type="siType" />
+   <xsd:element name="lastName" type="xsd:integer" />
+   <xsd:element name="firstName" type="xsd:string" />
+   <xsd:element name="dateOfEnrollment" type="xsd:date" />
+   <xsd:element name="credits" type="creditsType" />
+   <xsd:element name="comment" type="xsd:string" />
+   <xsd:attribute name="degree" type="degreeType" />
+
+   <xsd:simpleType name="siType">
+      <xsd:restriction base="xsd:ID">
+         <xsd:pattern value="SI\d{3}-\d{3}-\d{2}" />
+      </xsd:restriction>
+   </xsd:simpleType>
+
+   <xsd:element name="gpa">
+      <xsd:complexType>
+         <xsd:simpleContent>
+            <xsd:extension base="gpaType">
+               <xsd:attribute ref="degree" use="required" />
+            </xsd:extension>
+         </xsd:simpleContent>
+      </xsd:complexType>
+   </xsd:element>
+
+   <xsd:simpleType name="creditsType">
+      <xsd:restriction base="xsd:integer">
+         <xsd:minInclusive value="1" />
+      </xsd:restriction>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="gpaType">
+      <xsd:restriction base="xsd:decimal">
+         <xsd:minExclusive value="0" />
+         <xsd:maxInclusive value="4" />
+      </xsd:restriction>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="degreeType">
+      <xsd:restriction base="xsd:string">
+         <xsd:enumeration value="MP" />
+         <xsd:enumeration value="WPA" />
+      </xsd:restriction>
+   </xsd:simpleType>
+
+   <xsd:element name="student">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element ref="lastName" />
+            <xsd:element ref="firstName" />
+            <xsd:element ref="dateOfEnrollment" />
+            <xsd:element ref="credits" />
+            <xsd:element ref="comment" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element ref="gpa" />
+         </xsd:sequence>
+ 
+         <xsd:attribute ref="stuID" use="required" />
+      </xsd:complexType>
+   </xsd:element>
+   
+   <xsd:element name="students">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element ref="student" minOccurs="1" maxOccurs="unbounded" />
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+
+</xsd:schema>
+

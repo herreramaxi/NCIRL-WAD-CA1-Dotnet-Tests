@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+   <xsd:annotation>
+	<xsd:documentation>
+	   This document describes the schema for products and vendors
+	</xsd:documentation>
+   </xsd:annotation>
+
+<xsd:annotation>Global Element Declaration</xsd:annotation>
+<xsd:element name="vendor_name" type="xsd:string"/>
+<xsd:element name="b" type="xsd:string"/>
+<xsd:element name="i" type="xsd:string"/>
+<xsd:element name="p" type="xsd:string"/>
+<xsd:element name="short_desc" type="xsd:string"/>
+<xsd:element name="product_desc" type="xsd:string"/>
+<xsd:element name="giveaway_item" type="xsd:string"/>
+<xsd:element name="giveaway_desc" type="xsd:string"/>
+<xsd:element name="long_desc" type="xsd:string"/>
+<xsd:element name="product_id" type="xsd:string"/>
+
+
+<xsd:annotation>Root Element Declaration</xsd:annotation>
+<xsd:element name="products">
+   <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+           <xsd:element ref="vendor" />
+           <xsd:element ref="special" />
+        </xsd:choice>
+   </xsd:complexType>
+</xsd:element>
+
+
+<xsd:element name="giveaway">
+   <xsd:complexType>
+     <xsd:sequence>
+       <xsd:element name="giveaway_item" type="xsd:string"/>
+       <xsd:element name="giveaway_desc" type="xsd:string"/>
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="special">
+   <xsd:complexType>
+     <xsd:sequence>
+        <xsd:attribute name="specialtype" type="xsd:string" fixed="weekly" />
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="item">
+   <xsd:complexType>
+     <xsd:sequence>
+        <xsd:element ref="product_desc" />
+        <xsd:element ref="price" minOccurs="0" maxOccurs="unbounded"/>
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="suite">
+   <xsd:complexType>
+     <xsd:sequence>
+        <xsd:element ref="product_id" />
+        <xsd:element ref="short_desc" />
+        <xsd:element ref="long_desc" />
+        <xsd:element ref="price" />
+        <xsd:element ref="product" minOccurs="0" maxOccurs="unbounded" />
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="product">
+   <xsd:complexType>
+     <xsd:sequence>
+        <xsd:element ref="product_id" />
+        <xsd:element ref="short_desc" />
+        <xsd:element ref="product_desc" minOccurs="0" maxOccurs="1" />
+        <xsd:element ref="price" minOccurs="1" maxOccurs="unbounded" />
+        <xsd:element ref="item" minOccurs="0" maxOccurs="unbounded" />
+        <xsd:element ref="inventory" minOccurs="0" maxOccurs="unbounded" />
+        <xsd:element ref="giveaway" minOccurs="0" maxOccurs="1" />
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="vendor">
+   <xsd:complexType>
+     <xsd:sequence>
+        <xsd:element ref="vendor_name" />
+        <xsd:element ref="advertisement" minOccurs="0" maxOccurs="1" />
+        <xsd:element ref="suite" minOccurs="0" maxOccurs="unbounded" />
+        <xsd:element ref="product" minOccurs="0" maxOccurs="unbounded" />
+        <xsd:attribute name="webvendor" type="xsd:string" use="required" />
+        <xsd:attribute name="id" type="xsd:ID" use="required" />
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="price">
+   <xsd:complexType>
+     <xsd:sequence>
+       <xsd:attribute name="pricetype" type="xsd:NMTOKEN" default="retail">
+           <xsd:simpleType base="xsd:string">
+               <xsd:enumeration value="cost"/>
+               <xsd:enumeration value="sale"/>
+               <xsd:enumeration value="retail"/>
+               <xsd:enumeration value="starting"/>
+           </xsd:simpleType>
+       </xsd:attribute>
+       <xsd:attribute name="color" type="xsd:string" use="implied" />
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="inventory">
+   <xsd:complexType>
+     <xsd:sequence>
+       <xsd:attribute name="location" type="xsd:NMTOKEN" default="warehouse">
+           <xsd:simpleType base="xsd:string">
+               <xsd:enumeration value="warehouse"/>
+               <xsd:enumeration value="showroom"/>
+           </xsd:simpleType>
+       </xsd:attribute>
+       <xsd:attribute name="color" type="xsd:string" use="implied" />
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+
+<xsd:element name="advertisement">
+   <xsd:complexType mixed ="false">
+     <xsd:sequence>
+        <xsd:element name="ad_sentence">
+	   <xsd:complexType mixed ="true">
+	      <xsd:choice maxOccurs="unbounded">
+                <xsd:element ref="b" minOccurs="0"/>
+                <xsd:element ref="i" minOccurs="0"/>/>
+                <xsd:element ref="p" minOccurs="0"/>/>
+             </xsd:choice>
+   	   </xsd:complexType>     
+        </xsd:element>
+     </xsd:sequence>
+   </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>
+
+
